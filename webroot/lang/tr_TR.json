@@ -11,6 +11,9 @@
       "header": "Yeni temanızı seçin",
       "dark": "Koyu",
       "light": "Açık",
+      "miuix_light": "Miuix Açık",
+      "miuix_dark": "Miuix Koyu",
+      "material_you": "Material You",
       "system": "Sistem Tabanlı"
     },
     "errorh": {

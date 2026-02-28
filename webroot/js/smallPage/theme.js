@@ -3,6 +3,9 @@ import { setAmoled } from '../themes/amoled.js'
 import { setDark } from '../themes/dark.js'
 import { setLight } from '../themes/light.js'
 import { setMonochrome } from '../themes/monochrome.js'
+import { setMiuixLight } from '../themes/miuixLight.js'
+import { setMiuixDark } from '../themes/miuixDark.js'
+import { setMaterialYou, refreshMaterialYou } from '../themes/materialYou.js'
 
 // INFO: requirement variables
 let sys_theme
@@ -12,9 +15,12 @@ const themeList = {
   dark: () => setDark(true),
   light: () => setLight(true),
   monochrome: () => setMonochrome(true),
+  miuix_light: () => setMiuixLight(true),
+  miuix_dark: () => setMiuixDark(true),
+  material_you: () => setMaterialYou(true),
   system: (unavaliable) => {
     const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-    if (isDark && unavaliable) setDark() 
+    if (isDark && unavaliable) setDark()
     else setLight()
   },
 }
@@ -26,7 +32,7 @@ const setData = (mode) => {
 // INFO: Initial open logic
 sys_theme = localStorage.getItem('/system/theme')
 if (!sys_theme) sys_theme = setData('dark')
-themeList[sys_theme](true)
+Promise.resolve(themeList[sys_theme](true))
 
 // INFO: Event logic
 const navbar_data_tag = document.getElementById('cache-navbar-previous')
@@ -40,7 +46,7 @@ document.addEventListener('click', async (event) => {
 
   if (!getThemeMode || typeof getThemeMode !== 'string' || !themeListKey.includes(getThemeMode)) return
 
-  themeList[getThemeMode](true)
+  await Promise.resolve(themeList[getThemeMode](true))
 
   smallPageDisabler('theme', 'settings')
 
@@ -55,6 +61,10 @@ page_toggle.addEventListener('click', () => {
 })
 
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+  if (sys_theme === "material_you") {
+    refreshMaterialYou()
+    return
+  }
   if (sys_theme !== "system") return
   const newColorScheme = event.matches ? "dark" : "light";
 

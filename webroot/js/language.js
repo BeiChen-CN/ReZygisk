@@ -32,6 +32,9 @@ export async function setNewLanguage(locate, initialize) {
   document.getElementById('small_panel_theme_title').innerHTML = new_translations.smallPage.theme.header
   document.getElementById('small_panel_theme_dark_option').innerHTML = new_translations.smallPage.theme.dark
   document.getElementById('small_panel_theme_light_option').innerHTML = new_translations.smallPage.theme.light
+  document.getElementById('small_panel_theme_miuix_light_option').innerHTML = new_translations.smallPage.theme.miuix_light
+  document.getElementById('small_panel_theme_miuix_dark_option').innerHTML = new_translations.smallPage.theme.miuix_dark
+  document.getElementById('small_panel_theme_material_you_option').innerHTML = new_translations.smallPage.theme.material_you
   document.getElementById('small_panel_theme_system_option').innerHTML = new_translations.smallPage.theme.system
 
   /* INFO: Error history small page */

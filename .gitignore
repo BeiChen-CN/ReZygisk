@@ -5,3 +5,5 @@
 build
 local.properties
 Cargo.lock
+CLAUDE.md
+.claude/settings.local.json

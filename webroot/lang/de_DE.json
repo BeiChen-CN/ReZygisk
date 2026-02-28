@@ -11,6 +11,9 @@
       "header": "Neues Theme wählen",
       "dark": "Dunkel",
       "light": "Hell",
+      "miuix_light": "Miuix Hell",
+      "miuix_dark": "Miuix Dunkel",
+      "material_you": "Material You",
       "system": "System Basiert"
     },
     "errorh": {

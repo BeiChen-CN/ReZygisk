@@ -11,6 +11,9 @@
       "header": "اختر السمة",
       "dark": "مظلم",
       "light": "مضئ",
+      "miuix_light": "Miuix فاتح",
+      "miuix_dark": "Miuix مظلم",
+      "material_you": "Material You",
       "system": "تلقائي"
     },
     "errorh": {

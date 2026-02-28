@@ -11,6 +11,9 @@
       "header": "选择主题风格",
       "dark": "暗色",
       "light": "浅色",
+      "miuix_light": "Miuix 浅色",
+      "miuix_dark": "Miuix 暗色",
+      "material_you": "Material You",
       "system": "跟随系统"
     },
     "errorh": {

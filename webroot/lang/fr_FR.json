@@ -11,6 +11,9 @@
       "header": "Choisissez votre nouveau thème",
       "dark": "Sombre",
       "light": "Clair",
+      "miuix_light": "Miuix Clair",
+      "miuix_dark": "Miuix Sombre",
+      "material_you": "Material You",
       "system": "Basé sur le système"
     },
     "errorh": {

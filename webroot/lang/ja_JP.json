@@ -11,6 +11,9 @@
       "header": "テーマを選択してください",
       "dark": "ダーク",
       "light": "ライト",
+      "miuix_light": "Miuix ライト",
+      "miuix_dark": "Miuix ダーク",
+      "material_you": "Material You",
       "system": "システムベース"
     },
     "errorh": {

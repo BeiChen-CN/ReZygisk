@@ -11,6 +11,9 @@
       "header": "Выберите свою новую тему",
       "dark": "Темная",
       "light": "Светлая",
+      "miuix_light": "Miuix Светлая",
+      "miuix_dark": "Miuix Тёмная",
+      "material_you": "Material You",
       "system": "На основе системной темы"
     },
     "errorh": {

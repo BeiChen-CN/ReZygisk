@@ -11,6 +11,9 @@
       "header": "Pilih tema anda",
       "dark": "Gelap",
       "light": "Cerah",
+      "miuix_light": "Miuix Cerah",
+      "miuix_dark": "Miuix Gelap",
+      "material_you": "Material You",
       "system": "Berasaskan Sistem"
     },
     "errorh": {

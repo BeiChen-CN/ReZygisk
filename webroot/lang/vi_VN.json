@@ -11,6 +11,9 @@
       "header": "Chọn giao diện mới của bạn",
       "dark": "Tối",
       "light": "Sáng",
+      "miuix_light": "Miuix Sáng",
+      "miuix_dark": "Miuix Tối",
+      "material_you": "Material You",
       "system": "Theo hệ thống"
     },
     "errorh": {

@@ -11,6 +11,9 @@
       "header": "Kies uw nieuwe thema",
       "dark": "Donker",
       "light": "Licht",
+      "miuix_light": "Miuix Licht",
+      "miuix_dark": "Miuix Donker",
+      "material_you": "Material You",
       "system": "Systeem Gebaseerd"
     },
     "errorh": {
